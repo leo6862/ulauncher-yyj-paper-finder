@@ -1,6 +1,6 @@
 {
   "required_api_version": "^2.0.0",
-  "name": "Fuzzy Finder",
+  "name": "Paper Finder",
   "description": "Find files and directories in Ulauncher using fzf",
   "developer_name": "Hillary Chan",
   "icon": "images/icon.png",
