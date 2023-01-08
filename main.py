@@ -48,7 +48,7 @@ class FuzzyFinderExtension(Extension):
         logger.debug("Checking user preferences are valid")
         errors = []
 
-        base_dir = preferences["base_dir"]
+        base_dir = "/home/yyj/doc/papers";
         if not path.isdir(path.expanduser(base_dir)):
             errors.append(f"Base directory '{base_dir}' is not a directory.")
 
@@ -166,7 +166,6 @@ class KeywordQueryEventListener(EventListener):
             return self.no_op_result_items(errors, "error")
 
         query = event.get_argument()
-        query += " doc/papers/ .pdf"
         if not query:
             return self.no_op_result_items(["Enter your search criteria."])
 
