@@ -166,6 +166,7 @@ class KeywordQueryEventListener(EventListener):
             return self.no_op_result_items(errors, "error")
 
         query = event.get_argument()
+        query += " doc/papers/ .pdf"
         if not query:
             return self.no_op_result_items(["Enter your search criteria."])
 
